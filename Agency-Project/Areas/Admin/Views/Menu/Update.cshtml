@@ -1,0 +1,23 @@
+﻿@model Portfolio
+
+<div class="container">
+    <form asp-action="Update" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Title</label>
+            <input asp-for="Title" class="form-control" placeholder="Enter Title">
+        </div>
+        <div class="form-group">
+            <label>Subtitle</label>
+            <input asp-for="Description" class="form-control" placeholder="Enter Subtitle">
+        </div>
+
+        <div class="form-group">
+            <label>Photo</label>
+            <input asp-for="ImgFile" class="form-control" placeholder="Enter Photo" accept=".jpg , .png , .jpeg">
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
